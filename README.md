@@ -17,7 +17,7 @@ After models and dependencies have been downloaded, core inference can run local
 - **Voice conversation:** microphone input → Whisper transcription → Gemma response → XTTS spoken output.
 - **Local LLM:** Gemma 4 E4B Instruct, GGUF `Q4_K_M`, served by `llama-server`.
 - **Function calling / tool actions:** routes supported requests to an allowlisted local action dispatcher, including selected app, browser, audio, system-information, and file actions. The available action set is defined by the installed code and configuration.
-- **Web search:** an optional/experimental search path can retrieve online information. Search availability and routing depend on the configured implementation; external requests are not local-only.
+- **Web search:** an optional/experimental search path can retrieve online information. Search availability and routing depend on the configured implementation; external requests are not local-only. (For more info, check config/README)
 - **System-resource monitoring:** CPU, RAM, GPU/VRAM, disk, and temperature views where the relevant telemetry source is available.
 - **Speech stack:** faster-whisper for speech-to-text and XTTS-v2 for speech synthesis.
 - **Automatic path discovery:** detects known `llama-server.exe` locations and supports optional custom paths through `nova_paths.bat`.
