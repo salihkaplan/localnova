@@ -1,0 +1,7 @@
+@echo off
+rem Optional local path overrides. Installer creates nova_paths.bat if it can resolve paths.
+rem Copy this file to nova_paths.bat only when you want to override auto-detected paths.
+rem Do not put API keys or passwords here.
+rem set "NOVA_LLAMA_DIR=D:\AI\llama-cuda"
+rem set "NOVA_FFMPEG_BIN=D:\Tools\ffmpeg\bin"
+rem Gemma uses llama.cpp's standard Hugging Face cache unless LLAMA_CACHE/HF_HOME is set externally.

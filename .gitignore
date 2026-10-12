@@ -1,0 +1,67 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.*
+secrets.*
+
+# Python environments and caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+tts_env/
+jarvis_ui_env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# User data, logs, diagnostics, recordings
+*.sqlite3
+*.sqlite
+*.db
+*.log
+*.wav
+*.mp3
+*.flac
+nova_resource_snapshot*.json
+resource_snapshot*.json
+recordings/
+audio-output/
+
+# Model weights and runtime binaries
+*.gguf
+*.safetensors
+*.pt
+*.pth
+*.onnx
+models/
+weights/
+.cache/
+
+# Build and editor
+build/
+dist/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local machine-specific path configuration
+nova_paths.bat
+
+# Local installation state
+/nova_paths.bat
+/jarvis_ui_env/
+/tts_env/
+/llama-cuda/
+/llama-cuda-*/
+/ffmpeg/
+/logs/
+/*.log
+/nova_memory.sqlite3
+/__pycache__/
+/**/*.pyc
